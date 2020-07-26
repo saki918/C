@@ -5,7 +5,7 @@ int main()
   char str[100];
   char sign[1];
   int a, b;
-	printf("演算します。式を入力してください> ");
+  printf("演算します。式を入力してください> ");
   fgets(str, sizeof(str), stdin);
   sscanf(str, "%d %[+-*/] %d", &a, sign, &b);
   if (strcmp(sign,"+") == 0) {
